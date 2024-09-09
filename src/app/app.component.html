@@ -1,1 +1,24 @@
-<h1>Sports Store Module</h1>
+<app-navbar [drawer]="drawer"></app-navbar>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened #drawer class="example-sidenav">
+    <h3>Categories</h3>
+    <mat-list>
+      <mat-list-item>
+        <span matListItemTitle>Pepper</span>
+        <span matListItemLine>Produced by a plant</span>
+      </mat-list-item>
+      <mat-list-item>
+        <span matListItemTitle>Salt</span>
+        <span matListItemLine>Extracted from sea water</span>
+      </mat-list-item>
+      <mat-list-item>
+        <span matListItemTitle>Paprika</span>
+        <span matListItemLine>Produced by dried and ground red peppers</span>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content class="example-main">
+    <h2>Products</h2>
+  </mat-drawer-content>
+</mat-drawer-container>
+

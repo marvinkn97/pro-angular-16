@@ -1,0 +1,15 @@
+.example-container {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .example-sidenav {
+    padding: 40px;
+    background: #eee;
+  }
+
+  .example-main{
+    padding: 20px;
+    background: #fff;
+  }
+  
