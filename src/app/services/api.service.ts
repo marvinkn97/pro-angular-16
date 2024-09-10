@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -8,11 +9,14 @@ export class ApiService {
   private http = inject(HttpClient);
   constructor() {}
 
-  add(url: string, data: any, options?: {}) {
-    this.http.post(url, data);
+  add(url: string, data: any, headers?: {}) {
+    this.http.post(url, data, headers);
   }
   update() {}
   delete() {}
-  getAll() {}
+
+  getAll(url: string): Observable<any[]> {
+    return this.http.get<any[]>(url);
+  }
   getById() {}
 }
