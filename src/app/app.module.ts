@@ -16,9 +16,20 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CategoryComponent } from './admin/pages/master/category/category.component';
+import { ProductComponent } from './admin/pages/master/product/product.component';
+import { ShopComponent } from './shop/shop.component';
+import { RouterModule } from '@angular/router';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, CategoryComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    CategoryComponent,
+    ProductComponent,
+    ShopComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -33,6 +44,9 @@ import { CategoryComponent } from './admin/pages/master/category/category.compon
     MatTabsModule,
     MatInputModule,
     MatFormFieldModule,
+    RouterModule,
+    MatPaginatorModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

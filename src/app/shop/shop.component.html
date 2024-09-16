@@ -1,0 +1,101 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" #drawer class="example-sidenav">
+    <h2>Categories</h2>
+    <mat-list>
+      <mat-list-item *ngFor="let category of categories()">
+        <span matListItemTitle>
+          <a mat-button>{{ category?.categoryName }}</a></span
+        >
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content class="example-main">
+    <div>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+        (click)="drawer.toggle()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h2>Products</h2>
+    </div>
+
+    <div class="product-catalog">
+      <mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer> </mat-card
+      ><mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer> </mat-card
+      ><mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer> </mat-card
+      ><mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer> </mat-card
+      ><mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer> </mat-card
+      ><mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer> </mat-card
+      ><mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer> </mat-card
+      ><mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer> </mat-card
+      ><mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer> </mat-card
+      ><mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer> </mat-card
+      ><mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer> </mat-card
+      ><mat-card appearance="outlined">
+        <mat-card-header>product name</mat-card-header>
+        <mat-card-content>product description</mat-card-content>
+        <img mat-card-image />
+        <mat-card-actions>actions</mat-card-actions>
+        <mat-card-footer>extra</mat-card-footer>
+      </mat-card>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
